@@ -14,3 +14,9 @@ Route::get('/form', 'App\Http\Controllers\FormController@form')->name('form');
 
 Route::post('/form/send', 'App\Http\Controllers\FormController@send')->name('send_form');
 
+
+
+Route::get('/post-form', 'App\Http\Controllers\PostsController@post_form')->name('post_form');
+
+Route::post('/post-form/send', 'App\Http\Controllers\PostsController@add_post')->name('add_post');
+
