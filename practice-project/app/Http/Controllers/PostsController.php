@@ -19,6 +19,7 @@ class PostsController extends Controller
     public function post_form(){
     	return view('post-adding-form');
     }
+    //You need to configure the controller to add data to the database
     public function add_post(PostAddingForm $req){
     	dd($req);
     }
