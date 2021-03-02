@@ -18,9 +18,11 @@ footer{
 	left: 0;
 	background: url(/images/sl-arrow_l.svg?a507254423feda29bc65ba00577e8253) 0 0 /100% no-repeat;
 	border: none;
+	outline: none;
 }
 .slider .slick-arrow.slick-next{
 	right: 0;
 	background: url(/images/sl-arrow_r.svg?d56325e87f529d371bb622804485b547) 0 0 /100% no-repeat;
 	border: none;
+	outline: none;
 }

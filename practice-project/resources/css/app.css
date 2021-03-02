@@ -18,9 +18,11 @@ footer{
 	left: 0;
 	background: url(../img/sl-arrow_l.svg) 0 0 /100% no-repeat;
 	border: none;
+	outline: none;
 }
 .slider .slick-arrow.slick-next{
 	right: 0;
 	background: url(../img/sl-arrow_r.svg) 0 0 /100% no-repeat;
 	border: none;
+	outline: none;
 }

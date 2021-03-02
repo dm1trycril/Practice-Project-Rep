@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/news', 'App\Http\Controllers\PostsController@news')->name('news');
-
+	
 Route::get('/post/{id}', 'App\Http\Controllers\PostsController@show_single_post')->name('show_post');
 
 Route::group(['prefix' => 'admin'], function () {

@@ -4,8 +4,8 @@
 
 @section('content')
 	<div class="alert alert-primary text-center">
-		<h2>{!! $posts->title !!}</h2>
+		<h2>{!! $posts->title !!} {!! $posts->views !!}</h2>
 		<br/>
-		<p>{!! $posts->body !!}</p>	
+		<p>{!! $posts->body !!}</p>
 	</div>
 @endsection

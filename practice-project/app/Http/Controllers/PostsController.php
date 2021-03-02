@@ -9,12 +9,13 @@ use App\Http\Requests\PostAddingForm;
 class PostsController extends Controller
 {
     public function news(){
-    	$posts = Posts::all();
+    	$posts = Posts::where('status', '=', 'PUBLISHED')->get();
     	return view('news', array('posts' => $posts));
     }
     public function show_single_post($id){
-    	$post_data = new Posts();
-    	return view('single_post', ['posts' => $post_data->find($id)]);
+    	$post_data = Posts::where('id', $id)->first();
+        $post_data->increment('views');
+    	return view('single_post', ['posts' => $post_data]);
     }
     public function post_form(){
     	return view('post-adding-form');
